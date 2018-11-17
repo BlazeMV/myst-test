@@ -9,6 +9,7 @@ class FutsalaController extends Controller
 {
     public function webhook()
     {
+//        return '';
         $update = Bot::handleUpdate(function (Update $update) {
         
         });

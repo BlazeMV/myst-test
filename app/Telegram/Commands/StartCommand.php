@@ -55,9 +55,6 @@ class StartCommand extends CommandController
                         )
                 )
         );*/
-        
-        $result = $this->replyWith(SendMessage::make()->text("hello. lets get started"));
-        if ($result->isOk())
-            ScheduleConversation::init($this->getUpdate(), $result->getResponseObject()->getId());
+        ScheduleConversation::init($this->getUpdate());
     }
 }
