@@ -30,7 +30,7 @@ return [
 			    \App\Telegram\Commands\StartCommand::class,
 			],
 			'callback_queries'              => [
-			
+			    \App\Telegram\CallbackQueries\Yes::class,
 			],
 			'conversations'                 => [
 			    \App\Telegram\Conversations\ScheduleConversation::class,

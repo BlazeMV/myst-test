@@ -34,7 +34,7 @@ class StartCommand extends CommandController
 
     public function handle($arguments)
     {
-        /*$result = $this->replyWith(
+        $result = $this->replyWith(
             SendMessage::make()
                 ->text('hellosdfasef')
                 ->parseHTML()
@@ -54,7 +54,7 @@ class StartCommand extends CommandController
                                 ->callbackData("maybe")
                         )
                 )
-        );*/
-        ScheduleConversation::init($this->getUpdate());
+        );
+//        ScheduleConversation::init($this->getUpdate());
     }
 }
