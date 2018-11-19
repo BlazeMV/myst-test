@@ -39,7 +39,7 @@ return [
 			
 			],
 			'hashtags'                      => [
-			
+			    \App\Telegram\Hashtags\Ok::class,
 			],
 			'mentions'                      => [
 			

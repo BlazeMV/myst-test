@@ -19,9 +19,9 @@ class StartCommand extends CommandController
     
     protected $aliases = ['help'];
     
-    protected $position = 'dsgsergh';
+    protected $position = '0';
     
-    protected $only_command = false;
+    protected $standalone = true;
     
     protected $case_sensitive = true;
     
