@@ -2,7 +2,7 @@
 
 namespace App\Telegram\CallbackQueries;
 
-use Blaze\Myst\Api\Requests\SendMessage;
+use Blaze\Myst\Api\Requests\AnswerCallbackQuery;
 use Blaze\Myst\Controllers\CallbackQueryController;
 
 class Yes extends CallbackQueryController
@@ -11,6 +11,6 @@ class Yes extends CallbackQueryController
     
     protected function handle($arguments)
     {
-        $this->replyWith(SendMessage::make()->text("Your Answer Was recorded"));
+        $this->replyWith(AnswerCallbackQuery::make()->text("Your Answer Was recorded"));
     }
 }
