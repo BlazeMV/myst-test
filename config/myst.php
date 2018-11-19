@@ -42,7 +42,7 @@ return [
 			    \App\Telegram\Hashtags\Ok::class,
 			],
 			'mentions'                      => [
-			
+			    \App\Telegram\Mentions\Blazemv::class,
 			]
 		]
 	]
