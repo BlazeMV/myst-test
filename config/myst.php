@@ -21,7 +21,7 @@ return [
             'process'                       => [
                 'commands'                      => true,
                 'callback_queries'              => true,
-                'text'                          => true,
+                'texts'                         => true,
                 'hashtags'                      => true,
                 'mentions'                      => true,
                 'conversations'                 => true,
@@ -36,7 +36,7 @@ return [
 			    \App\Telegram\Conversations\ScheduleConversation::class,
 			],
 			'texts'                      => [
-			
+			    \App\Telegram\Text\Hello::class,
 			],
 			'hashtags'                      => [
 			    \App\Telegram\Hashtags\Ok::class,
