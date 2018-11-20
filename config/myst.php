@@ -36,7 +36,7 @@ return [
 			    \App\Telegram\Conversations\ScheduleConversation::class,
 			],
 			'texts'                      => [
-			    \App\Telegram\Text\Hello::class,
+			    \App\Telegram\Texts\Hello::class,
 			],
 			'hashtags'                      => [
 			    \App\Telegram\Hashtags\Ok::class,

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Telegram\Text;
+namespace App\Telegram\Texts;
 
 use Blaze\Myst\Api\Requests\SendMessage;
 use Blaze\Myst\Controllers\TextController;
