@@ -9,7 +9,7 @@ class Yes extends CallbackQueryController
 {
     protected $name = 'yes';
     
-    protected function handle($arguments)
+    protected function handle()
     {
         $this->replyWith(AnswerCallbackQuery::make()->text("Your Answer Was recorded"));
     }

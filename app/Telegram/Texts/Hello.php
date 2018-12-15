@@ -15,7 +15,7 @@ class Hello extends TextController
     
     protected $standalone = false;
     
-    protected function handle($arguments)
+    protected function handle()
     {
         $this->replyWith(SendMessage::make()->text("responding to hello message"));
     }

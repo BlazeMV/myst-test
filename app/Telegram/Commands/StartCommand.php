@@ -32,7 +32,7 @@ class StartCommand extends CommandController
         'channel'       => true
     ];
 
-    public function handle($arguments)
+    public function handle()
     {
         $result = $this->replyWith(
             SendMessage::make()

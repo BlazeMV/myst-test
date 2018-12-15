@@ -9,7 +9,7 @@ class Blazemv extends MentionController
 {
     protected $name = 'blazemv';
     
-    protected function handle($arguments)
+    protected function handle()
     {
         $this->replyWith(SendMessage::make()->text("responding to @blazemv mention"));
     }
