@@ -163,7 +163,7 @@ return [
         /*
          * Package Service Providers...
          */
-        \Blaze\Myst\Support\Laravel\MystServiceProvider::class,
+        \Blaze\Myst\Laravel\MystServiceProvider::class,
 
         /*
          * Application Service Providers...
