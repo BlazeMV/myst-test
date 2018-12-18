@@ -10,9 +10,13 @@ class FutsalaController extends Controller
     public function webhook()
     {
 //        return '';
-        $update = Bot::handleUpdate(function (Update $update) {
+        try {
+            $update = Bot::handleUpdate(function (Update $update) {
         
-        });
+            });
+        } catch (\Throwable $t) {
+            return $t;
+        }
         return 'true';
     }
 }
